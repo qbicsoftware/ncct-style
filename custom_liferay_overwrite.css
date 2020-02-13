@@ -1,32 +1,27 @@
-
-
 /* Makes Navigation bar go over entire page width 
 and Removes Side margins from Liferay Homepage */
-
 #wrapper {
   padding: 0;
   margin: inherit;
 }
 
 /* Moves logo and site number to the right */
-
 #banner > #heading {
   padding: 0px 40px 0px 40px;
 }
 
 /* Changes Footer position and allows for insertion of image*/
-
 #footer {
   padding: 0px 40px 0px 40px;
 }
+
 /* Removes margin from breadcrumbs to content */
 #content > #breadcrumbs {
   margin-bottom: inherit;
- }
+}
 
-/* Removes Margin and Padding from Portlet/Web Content Displays */ 
-.portlet-borderless-container 
-{
-padding: 0 !important; 
-margin-bottom: 0 !important; 
+/* Removes Margin and Padding from Portlet/Web Content Displays */
+.portlet-borderless-container {
+  padding: 0 !important;
+  margin-bottom: 0 !important;
 }
