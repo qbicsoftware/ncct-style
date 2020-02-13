@@ -38,6 +38,39 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+
+/* header classes */
+
+.bs4-h1, .bs4-h2, .bs4-h3, .bs4-h4, .bs4-h5, .bs4-h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.bs4-h1 {
+  font-size: 2.5rem;
+}
+
+.bs4-h2 {
+  font-size: 2rem;
+}
+
+.bs4-h3 {
+  font-size: 1.75rem;
+}
+
+.bs4-h4 {
+  font-size: 1.5rem;
+}
+
+.bs4-h5 {
+  font-size: 1.25rem;
+}
+
+.bs4-h6 {
+  font-size: 1rem;
+}
+
  /* .card related classes */
 .bs4-card {
   position: relative;
