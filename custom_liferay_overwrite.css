@@ -1,45 +1,20 @@
 /* Makes Navigation bar go over entire page width 
 and Removes Side margins from Liferay Homepage */
-
 #wrapper {
   padding: 0;
   margin: inherit;
 }
 
 /* Moves logo and site number to the right */
-
 #banner > #heading {
   padding: 0px 40px 0px 40px;
 }
-/* Makes font size responsive for all navigation bar elements */
 
-#banner > #navigation {
-
-  font-size: 1.2em;
-  }
-
-/* Changes navigation bar color moves and removes border width and left padding*/
-#banner > #navigation .navbar-inner {
-  background: var(--darkncct);
-  border-width: 0;
-  min-height: 36px;
-  padding-left: 0;
-}
-
-/* Changes color of selected navigation bar item */
-#banner > #navigation .nav > .active > a {
-  background-color: var(--ncct);
-  background-image: none;
-}
-/* Changes color of unselected navigation bar item*/
-#banner > #navigation .navbar-inner li a {
-  background-color: var(--darkncct);
-}
 /* Changes Footer position and allows for insertion of image*/
-
 #footer {
   padding: 0px 40px 0px 40px;
 }
+
 /* Removes margin from breadcrumbs to content */
 #content > #breadcrumbs {
   margin-bottom: inherit;
