@@ -20,7 +20,7 @@ and Removes Side margins from Liferay Homepage */
   margin-bottom: inherit;
 }
 
-/* Removes Margin and Padding from Portlet/Web Content Displays */
+/* Removes margin and padding from all portlets in a .portlet-borderless-container */
 .portlet-borderless-container {
   padding: 0 !important;
   margin-bottom: 0 !important;
