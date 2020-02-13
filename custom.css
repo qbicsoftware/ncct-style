@@ -3,3 +3,8 @@
     --ncct: #027ba4;
     --ncct-dark: #333333; 
 }
+
+ul.bs4-list-group {
+  margin-left: 0;
+  margin-bottom: 0;
+}
