@@ -8,3 +8,7 @@ ul.bs4-list-group {
   margin-left: 0;
   margin-bottom: 0;
 }
+
+.section-title {
+  text-align: center;
+}
