@@ -8,3 +8,18 @@ ul.bs4-list-group {
   margin-left: 0;
   margin-bottom: 0;
 }
+
+/* Slide adapted to full-screen structure and central vertical/horizontal alignment of slide content*/
+.bs4-slide{
+  /* content of vh-100 */
+    height: 100vh !important;
+  /* content of d-flex, necessary for vertical and horizontal adjustments */
+    display: -ms-flexbox !important;
+    display: flex !important;
+  /* content of justify-content-center */
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  /* content of align-items-center */
+    -ms-flex-align: center !important;
+    align-items: center !important;
+  }
