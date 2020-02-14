@@ -8,3 +8,36 @@ ul.bs4-list-group {
   margin-left: 0;
   margin-bottom: 0;
 }
+
+/* Adjustments to bootstrap table defaults*/
+
+/* Increase line spacing in table */
+.bs4-table {
+    line-height: 1.5;
+  }
+  
+  /* Align definition text to the left and increase font-size + font-weight */
+  .bs4-table-borderless th {
+  text-align:left; 
+  font-weight: 700; 
+  font-size: 1.5rem;
+  }
+    /* Align description text to the left and increase font-size + font-weight */
+  .bs4-table-borderless td
+  {
+  text-align:left; 
+  font-weight: 500; 
+  font-size: 1.5rem;
+  }
+
+    /* Change font-color and background color for odd rownumbers */
+  .bs4-table-striped tbody tr:nth-of-type(odd) {
+    background-color: #027ba4;
+    color: white;
+  }
+      /* Change font-color and background color for even rownumbers */
+  .bs4-table-striped tbody tr:nth-of-type(even) {
+    background-color: white;
+    color: black;
+  }
+  
