@@ -38,9 +38,72 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+/* container classes */
+.bs4-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .bs4-container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bs4-container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .bs4-container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bs4-container {
+    max-width: 1140px;
+  }
+}
+
+.bs4-container-fluid, .bs4-container-sm, .bs4-container-md, .bs4-container-lg, .bs4-container-xl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .bs4-container, .bs4-container-sm {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bs4-container, .bs4-container-sm, .bs4-container-md {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .bs4-container, .bs4-container-sm, .bs4-container-md, .bs4-container-lg {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bs4-container, .bs4-container-sm, .bs4-container-md, .bs4-container-lg, .bs4-container-xl {
+    max-width: 1140px;
+  }
+}
 
 /* header classes */
-
 .bs4-h1, .bs4-h2, .bs4-h3, .bs4-h4, .bs4-h5, .bs4-h6 {
   margin-bottom: 0.5rem;
   font-weight: 500;
