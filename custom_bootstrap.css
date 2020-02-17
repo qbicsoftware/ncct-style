@@ -2255,7 +2255,7 @@
   margin-bottom: 0;
 }
 
-.bs4-lilst-group-item-action {
+.bs4-list-group-item-action {
   width: 100%;
   color: #495057;
   text-align: inherit;
@@ -2613,6 +2613,20 @@
 .bs4-justify-content-around {
   -ms-flex-pack: distribute !important;
   justify-content: space-around !important;
+}
+
+/* Align text classes*/
+
+.bs4-text-left {
+  text-align: left !important;
+}
+
+.bs4-text-right {
+  text-align: right !important;
+}
+
+.bs4-text-center {
+  text-align: center !important;
 }
 
 /* Bootstrap borderless table defaults*/
