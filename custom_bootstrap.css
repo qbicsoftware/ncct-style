@@ -2587,6 +2587,34 @@
   background-color: #1b1e21;
   border-color: #1b1e21;
 }
+
+/* justify content classes */
+
+.bs4-justify-content-start {
+  -ms-flex-pack: start !important;
+  justify-content: flex-start !important;
+}
+
+.bs4-justify-content-end {
+  -ms-flex-pack: end !important;
+  justify-content: flex-end !important;
+}
+
+.bs4-justify-content-center {
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+
+.bs4-justify-content-between {
+  -ms-flex-pack: justify !important;
+  justify-content: space-between !important;
+}
+
+.bs4-justify-content-around {
+  -ms-flex-pack: distribute !important;
+  justify-content: space-around !important;
+}
+
 /* Bootstrap borderless table defaults*/
 
 .bs4-table {
