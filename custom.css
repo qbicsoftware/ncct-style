@@ -1,12 +1,22 @@
 /*Previously Implemented Color Scheme for NCCT Homepage */
 :root {
-    --ncct: #027ba4;
-    --ncct-dark: #333333; 
+  --ncct: #027ba4;
+  --ncct-dark: #333333;
 }
 
 ul.bs4-list-group {
   margin-left: 0;
   margin-bottom: 0;
+}
+
+.section-title {
+  text-align: center;
+
+}
+
+/* Increase line spacing in table */
+.text-height-150 {
+  line-height: 1.5 !important;
 }
 
 /* Slide adapted to full-screen structure and central vertical/horizontal alignment of slide content*/
@@ -24,8 +34,23 @@ ul.bs4-list-group {
     align-items: center;
   }
 
-.section-title {
-  text-align: center;
+/* Custom table class adapted from bs4-table */
+
+.table-collapse {
+  border-collapse: collapse;
+}
+
+/* Align definition text to the left and increase font-size + font-weight */
+.impressum-table th {
+  text-align: left;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+/* Align description text to the left and increase font-size + font-weight */
+.impressum-table td {
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.5rem;
 }
 
 /* display the content in exactly 2 columns */
@@ -42,4 +67,14 @@ li.dfg-only {
 li.no-dfg-only {
   background-color: var(--ncct);
   color: white;
+}
+/* Change font-color and background color for odd rownumbers */
+.impressum-table-striped tbody tr:nth-of-type(odd) {
+  background-color: var(--ncct);
+  color: white;
+}
+/* Change font-color and background color for even rownumbers */
+.impressum-table-striped tbody tr:nth-of-type(even) {
+  background-color: white;
+  color: black;
 }
