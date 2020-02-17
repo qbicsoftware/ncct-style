@@ -27,3 +27,19 @@ ul.bs4-list-group {
 .section-title {
   text-align: center;
 }
+
+/* display the content in exactly 2 columns */
+.two-columns {
+  column-count: 2!important;
+}
+
+/* styling based on project-type */
+.dfg-only {
+  background-color:var(--ncct-dark);
+  color: white;
+}
+
+.no-dfg-only {
+  background-color: var(--ncct);
+  color: white;
+}
