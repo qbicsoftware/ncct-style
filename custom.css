@@ -1,7 +1,7 @@
 /*Previously Implemented Color Scheme for NCCT Homepage */
 :root {
-    --ncct: #027ba4;
-    --ncct-dark: #333333; 
+  --ncct: #027ba4;
+  --ncct-dark: #333333;
 }
 
 ul.bs4-list-group {
@@ -9,35 +9,33 @@ ul.bs4-list-group {
   margin-bottom: 0;
 }
 
-/* Adjustments to bootstrap table defaults*/
+/* Custom table class adapted from bs4-table */
 
 /* Increase line spacing in table */
-.bs4-table {
-    line-height: 1.5;
-  }
-  
-  /* Align definition text to the left and increase font-size + font-weight */
-  .bs4-table-borderless th {
-  text-align:left; 
-  font-weight: 700; 
-  font-size: 1.5rem;
-  }
-    /* Align description text to the left and increase font-size + font-weight */
-  .bs4-table-borderless td
-  {
-  text-align:left; 
-  font-weight: 500; 
-  font-size: 1.5rem;
-  }
+.custom-table-borderless-content {
+  line-height: 1.5;
+}
 
-    /* Change font-color and background color for odd rownumbers */
-  .bs4-table-striped tbody tr:nth-of-type(odd) {
-    background-color: #027ba4;
-    color: white;
-  }
-      /* Change font-color and background color for even rownumbers */
-  .bs4-table-striped tbody tr:nth-of-type(even) {
-    background-color: white;
-    color: black;
-  }
-  
+/* Align definition text to the left and increase font-size + font-weight */
+.custom-table-borderless-content th {
+  text-align: left;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+/* Align description text to the left and increase font-size + font-weight */
+.custom-table-borderless-content td {
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+/* Change font-color and background color for odd rownumbers */
+.custom-table-borderless-content-striped tbody tr:nth-of-type(odd) {
+  background-color: #027ba4;
+  color: white;
+}
+/* Change font-color and background color for even rownumbers */
+.custom-table-borderless-content-striped tbody tr:nth-of-type(even) {
+  background-color: white;
+  color: black;
+}
