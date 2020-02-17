@@ -134,6 +134,16 @@
   font-size: 1rem;
 }
 
+/* font related classes */
+
+.bs4-font-italic {
+  font-style: italic !important;
+}
+
+.bs4-font-weight-bold {
+  font-weight: 700 !important;
+}
+
  /* .card related classes */
 .bs4-card {
   position: relative;
