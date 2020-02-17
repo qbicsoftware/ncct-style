@@ -34,12 +34,12 @@ ul.bs4-list-group {
 }
 
 /* styling based on project-type */
-.dfg-only {
+li.dfg-only {
   background-color:var(--ncct-dark);
   color: white;
 }
 
-.no-dfg-only {
+li.no-dfg-only {
   background-color: var(--ncct);
   color: white;
 }
