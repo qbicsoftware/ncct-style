@@ -9,12 +9,32 @@ ul.bs4-list-group {
   margin-bottom: 0;
 }
 
-/* Custom table class adapted from bs4-table */
+.section-title {
+  text-align: center;
+
+}
 
 /* Increase line spacing in table */
 .text-height-150 {
   line-height: 1.5 !important;
 }
+
+/* Slide adapted to full-screen structure and central vertical/horizontal alignment of slide content*/
+.slide-panel{
+  /* content of vh-100 */
+    height: 100vh;
+  /* content of d-flex, necessary for vertical and horizontal adjustments */
+    display: -ms-flexbox;
+    display: flex;
+  /* content of justify-content-center */
+    -ms-flex-pack: center;
+    justify-content: center;
+  /* content of align-items-center */
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+/* Custom table class adapted from bs4-table */
 
 .table-collapse {
   border-collapse: collapse;
@@ -42,4 +62,5 @@ ul.bs4-list-group {
 .impressum-table-striped tbody tr:nth-of-type(even) {
   background-color: white;
   color: black;
-}
+
+
