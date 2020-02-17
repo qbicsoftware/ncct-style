@@ -2587,3 +2587,41 @@
   background-color: #1b1e21;
   border-color: #1b1e21;
 }
+/* Bootstrap borderless table defaults*/
+
+.bs4-table {
+
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+.bs4-table th,
+.bs4-table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.bs4-table-borderless th,
+.bs4-table-borderless td,
+.bs4-table-borderless thead th,
+.bs4-table-borderless tbody + tbody {
+  border: 0;
+}
+
+.bs4-table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 575.98px) {
+  .bs4-table-responsive-sm {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .bs4-table-responsive-sm > .bs4-table-bordered {
+    border: 0;
+  }
+}
