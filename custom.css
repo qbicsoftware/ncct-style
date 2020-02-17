@@ -10,16 +10,16 @@ ul.bs4-list-group {
 }
 
 /* Slide adapted to full-screen structure and central vertical/horizontal alignment of slide content*/
-.bs4-slide{
+.slide-panel{
   /* content of vh-100 */
-    height: 100vh !important;
+    height: 100vh;
   /* content of d-flex, necessary for vertical and horizontal adjustments */
-    display: -ms-flexbox !important;
-    display: flex !important;
+    display: -ms-flexbox;
+    display: flex;
   /* content of justify-content-center */
-    -ms-flex-pack: center !important;
-    justify-content: center !important;
+    -ms-flex-pack: center;
+    justify-content: center;
   /* content of align-items-center */
-    -ms-flex-align: center !important;
-    align-items: center !important;
+    -ms-flex-align: center;
+    align-items: center;
   }
