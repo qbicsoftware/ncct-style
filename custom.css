@@ -23,3 +23,7 @@ ul.bs4-list-group {
     -ms-flex-align: center;
     align-items: center;
   }
+
+.section-title {
+  text-align: center;
+}
