@@ -12,30 +12,34 @@ ul.bs4-list-group {
 /* Custom table class adapted from bs4-table */
 
 /* Increase line spacing in table */
-.custom-table-borderless-content {
-  line-height: 1.5;
+.text-height-150 {
+  line-height: 1.5 !important;
+}
+
+.table-collapse {
+  border-collapse: collapse;
 }
 
 /* Align definition text to the left and increase font-size + font-weight */
-.custom-table-borderless-content th {
+.impressum-table th {
   text-align: left;
   font-weight: 700;
   font-size: 1.5rem;
 }
 /* Align description text to the left and increase font-size + font-weight */
-.custom-table-borderless-content td {
+.impressum-table td {
   text-align: left;
   font-weight: 500;
   font-size: 1.5rem;
 }
 
 /* Change font-color and background color for odd rownumbers */
-.custom-table-borderless-content-striped tbody tr:nth-of-type(odd) {
-  background-color: #027ba4;
+.impressum-table-striped tbody tr:nth-of-type(odd) {
+  background-color: var(--ncct);
   color: white;
 }
 /* Change font-color and background color for even rownumbers */
-.custom-table-borderless-content-striped tbody tr:nth-of-type(even) {
+.impressum-table-striped tbody tr:nth-of-type(even) {
   background-color: white;
   color: black;
 }
