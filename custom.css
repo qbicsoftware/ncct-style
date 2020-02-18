@@ -9,9 +9,20 @@ ul.bs4-list-group {
   margin-bottom: 0;
 }
 
-.section-title {
-  text-align: center;
+ol.bs4-list-group {
+  margin-left: 0;
+  margin-bottom: 0;
+}
 
+ol > li.bs4-list-group-item {
+  display: list-item;
+  list-style-position: inside;
+}
+
+.section-title {
+  text-align: left;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
 }
 
 /* Increase line spacing in table */
@@ -53,21 +64,6 @@ ul.bs4-list-group {
   font-size: 1.5rem;
 }
 
-/* display the content in exactly 2 columns */
-.two-columns {
-  column-count: 2!important;
-}
-
-/* styling based on project-type */
-li.dfg-only {
-  background-color:var(--ncct-dark);
-  color: white;
-}
-
-li.no-dfg-only {
-  background-color: var(--ncct);
-  color: white;
-}
 /* Change font-color and background color for odd rownumbers */
 .impressum-table-striped tbody tr:nth-of-type(odd) {
   background-color: var(--ncct);
@@ -77,4 +73,101 @@ li.no-dfg-only {
 .impressum-table-striped tbody tr:nth-of-type(even) {
   background-color: white;
   color: black;
+}
+
+/* display the content in exactly 2 columns */
+.two-columns {
+  column-count: 2!important;
+}
+
+/* styling based on project-type */
+li.dfg-only {
+  color:inherit;
+}
+
+li.no-dfg-only {
+  color:inherit;
+}
+
+/* toggle switch slider CSS */
+/* box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch-container {
+  margin: 0 1rem;
+}
+
+.switch-label {
+  padding: .3rem;
+  border: .2rem solid;
+}
+
+/* hide the default checkbox */
+input.switch {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--ncct);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/* sliding indicator */
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 80%;
+  width: 50%;
+  top: 10%;
+  left: 0;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider.bs4-rounded-lg:before {
+  border-radius: inherit;
+}
+
+/* move the indicator when checked*/
+#dfg-switch:checked ~ * .slider:before {
+  transform: translateX(100%);
+}
+
+/* toggle visibility of dfg <li> */
+#dfg-switch:not(:checked) ~ * li.dfg-only-display {
+  display: none;
+}
+
+#dfg-switch:checked ~ * li.no-dfg-only-display {
+  display: none;
+}
+
+/* disableled state of the .switch-label elements*/
+#dfg-switch:not(:checked) ~ * .no-dfg-only-highlight.switch-label {
+  color: var(--gray);
+  background-color: white;
+  border-color: var(--gray);
+  border-color: transparent;
+}
+
+#dfg-switch:checked ~ * .dfg-only-highlight.switch-label {
+  color: var(--gray);
+  background-color: white;
+  border-color: var(--gray);
+  border-color: transparent;
 }
