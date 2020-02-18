@@ -110,6 +110,9 @@ li.no-dfg-only {
   font-size: 2rem;
   line-height: 1.2;
   padding: .3rem;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 /* hide the default checkbox */
