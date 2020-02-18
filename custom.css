@@ -102,9 +102,12 @@ li.no-dfg-only {
   margin: 0 1rem;
 }
 
+/* acivated state */
 .switch-label {
   padding: .3rem;
-  border: .2rem solid;
+  border: .2rem transparent;
+  background-color: var(--ncct);
+  color:white;
 }
 
 /* hide the default checkbox */
