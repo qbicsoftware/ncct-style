@@ -102,9 +102,17 @@ li.no-dfg-only {
   margin: 0 1rem;
 }
 
+/* acivated state */
 .switch-label {
+  background-color: var(--ncct);
+  border: .2rem transparent;
+  color:white;
+  font-size: 2rem;
+  line-height: 1.2;
   padding: .3rem;
-  border: .2rem solid;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 /* hide the default checkbox */
@@ -162,12 +170,10 @@ input.switch {
   color: var(--gray);
   background-color: white;
   border-color: var(--gray);
-  border-color: transparent;
 }
 
 #dfg-switch:checked ~ * .dfg-only-highlight.switch-label {
   color: var(--gray);
   background-color: white;
   border-color: var(--gray);
-  border-color: transparent;
 }
