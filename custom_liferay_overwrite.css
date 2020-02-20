@@ -7,7 +7,7 @@ and Removes Side margins from Liferay Homepage */
 
 /* Moves logo and site number to the right */
 #banner > #heading {
-  padding: 0px 40px 0px 40px;
+  padding: 0px 5px 0px 5px;
 }
 
 /* logo sizing */
@@ -15,14 +15,15 @@ and Removes Side margins from Liferay Homepage */
   height: 5rem;
 }
 
-#heading .custom-logo > img{
+#heading .logo.custom-logo > img{
   width: inherit;
   height: inherit;
+  object-fit: contain;
 }
 
 /* Changes Footer position and allows for insertion of image*/
 #footer {
-  padding: 0px 40px 0px 40px;
+  padding: 0px 5px 0px 5px;
 }
 
 /* Removes margin from breadcrumbs to content */
