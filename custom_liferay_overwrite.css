@@ -10,6 +10,16 @@ and Removes Side margins from Liferay Homepage */
   padding: 0px 40px 0px 40px;
 }
 
+/* logo sizing */
+#heading .custom-logo {
+  height: 5rem;
+}
+
+#heading .custom-logo > img{
+  width: inherit;
+  height: inherit;
+}
+
 /* Changes Footer position and allows for insertion of image*/
 #footer {
   padding: 0px 40px 0px 40px;
