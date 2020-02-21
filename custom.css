@@ -178,6 +178,27 @@ input.switch {
   border-color: var(--gray);
 }
 
+/* translucent background colors */
+.translucent-bg-container {
+  --bg-color: white;
+  position: relative;
+  z-index: 1; /* creates new z-layers*/
+  overflow: hidden;
+}
+
+.translucent-bg-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left:0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--bg-color);
+  opacity: 0.5;
+  z-index: -1; /* display below other children */
+}
+
 .bg-ncct {
   background-color: var(--ncct) !important;
 }
+
