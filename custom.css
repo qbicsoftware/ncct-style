@@ -31,19 +31,19 @@ ol > li.bs4-list-group-item {
 }
 
 /* Slide adapted to full-screen structure and central vertical/horizontal alignment of slide content*/
-.slide-panel{
+.slide-panel {
   /* content of vh-100 */
-    height: 100vh;
+  height: 100vh;
   /* content of d-flex, necessary for vertical and horizontal adjustments */
-    display: -ms-flexbox;
-    display: flex;
+  display: -ms-flexbox;
+  display: flex;
   /* content of justify-content-center */
-    -ms-flex-pack: center;
-    justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   /* content of align-items-center */
-    -ms-flex-align: center;
-    align-items: center;
-  }
+  -ms-flex-align: center;
+  align-items: center;
+}
 
 /* Custom table class adapted from bs4-table */
 
@@ -77,16 +77,16 @@ ol > li.bs4-list-group-item {
 
 /* display the content in exactly 2 columns */
 .two-columns {
-  column-count: 2!important;
+  column-count: 2 !important;
 }
 
 /* styling based on project-type */
 li.dfg-only {
-  color:inherit;
+  color: inherit;
 }
 
 li.no-dfg-only {
-  color:inherit;
+  color: inherit;
 }
 
 /* toggle switch slider CSS */
@@ -105,11 +105,11 @@ li.no-dfg-only {
 /* acivated state */
 .switch-label {
   background-color: var(--ncct);
-  border: .2rem transparent;
-  color:white;
+  border: 0.2rem transparent;
+  color: white;
   font-size: 2rem;
   line-height: 1.2;
-  padding: .3rem;
+  padding: 0.3rem;
   -ms-user-select: none;
   -webkit-user-select: none;
   user-select: none;
@@ -130,8 +130,8 @@ input.switch {
   right: 0;
   bottom: 0;
   background-color: var(--ncct);
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 /* sliding indicator */
@@ -143,8 +143,8 @@ input.switch {
   top: 10%;
   left: 0;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider.bs4-rounded-lg:before {
@@ -177,10 +177,6 @@ input.switch {
   background-color: white;
   border-color: var(--gray);
 }
-
-ul.list-bullets-none {
-  list-style-type: none;
-      }
 
 .bg-ncct {
   background-color: var(--ncct) !important;
