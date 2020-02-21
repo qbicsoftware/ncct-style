@@ -177,3 +177,11 @@ input.switch {
   background-color: white;
   border-color: var(--gray);
 }
+
+ul.list-bullets-none {
+  list-style-type: none;
+      }
+
+.bg-ncct {
+  background-color: var(--ncct) !important;
+}

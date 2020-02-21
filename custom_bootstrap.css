@@ -2971,3 +2971,16 @@
   display: -ms-inline-flexbox !important;
   display: inline-flex !important;
 }
+
+  
+.bs4-list-group-item {
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.25rem;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+  .bs4-text-white {
+    color: #fff !important;
+  }
