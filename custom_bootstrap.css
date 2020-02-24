@@ -3075,3 +3075,33 @@
 .bs4-text-white {
   color: white !important;
 }
+
+.bs4-media {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.bs4-media-body {
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.bs4-img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.bs4-img-thumbnail {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.bs4-border-0 {
+  border: 0 !important;
+}
