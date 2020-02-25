@@ -202,3 +202,16 @@ input.switch {
   background-color: var(--ncct) !important;
 }
 
+.vertical-spacer-vh-10 {
+  height: 10vh !important;
+}
+.vertical-spacer-vh-25 {
+  height: 25vh !important;
+}
+.vertical-spacer-vh-50 {
+  height: 50vh !important;
+}
+.vertical-spacer-vh-75 {
+  height: 75vh !important;
+}
+
