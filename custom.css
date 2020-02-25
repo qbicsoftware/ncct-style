@@ -1,4 +1,5 @@
 /*Previously Implemented Color Scheme for NCCT Homepage */
+
 :root {
   --ncct: #027ba4;
   --ncct-dark: #333333;
@@ -14,7 +15,7 @@ ol.bs4-list-group {
   margin-bottom: 0;
 }
 
-ol > li.bs4-list-group-item {
+ol>li.bs4-list-group-item {
   display: list-item;
   list-style-position: inside;
 }
@@ -26,11 +27,13 @@ ol > li.bs4-list-group-item {
 }
 
 /* Increase line spacing in table */
+
 .text-height-150 {
   line-height: 1.5 !important;
 }
 
 /* Slide adapted to full-screen structure and central vertical/horizontal alignment of slide content*/
+
 .slide-panel {
   /* content of vh-100 */
   height: 100vh;
@@ -52,12 +55,15 @@ ol > li.bs4-list-group-item {
 }
 
 /* Align definition text to the left and increase font-size + font-weight */
+
 .impressum-table th {
   text-align: left;
   font-weight: 700;
   font-size: 1.5rem;
 }
+
 /* Align description text to the left and increase font-size + font-weight */
+
 .impressum-table td {
   text-align: left;
   font-weight: 500;
@@ -65,22 +71,27 @@ ol > li.bs4-list-group-item {
 }
 
 /* Change font-color and background color for odd rownumbers */
+
 .impressum-table-striped tbody tr:nth-of-type(odd) {
   background-color: var(--ncct);
   color: white;
 }
+
 /* Change font-color and background color for even rownumbers */
+
 .impressum-table-striped tbody tr:nth-of-type(even) {
   background-color: white;
   color: black;
 }
 
 /* display the content in exactly 2 columns */
+
 .two-columns {
   column-count: 2 !important;
 }
 
 /* styling based on project-type */
+
 li.dfg-only {
   color: inherit;
 }
@@ -90,7 +101,9 @@ li.no-dfg-only {
 }
 
 /* toggle switch slider CSS */
+
 /* box around the slider */
+
 .switch {
   position: relative;
   display: inline-block;
@@ -103,6 +116,7 @@ li.no-dfg-only {
 }
 
 /* acivated state */
+
 .switch-label {
   background-color: var(--ncct);
   border: 0.2rem transparent;
@@ -116,6 +130,7 @@ li.no-dfg-only {
 }
 
 /* hide the default checkbox */
+
 input.switch {
   opacity: 0;
   width: 0;
@@ -135,6 +150,7 @@ input.switch {
 }
 
 /* sliding indicator */
+
 .slider::before {
   position: absolute;
   content: "";
@@ -152,37 +168,42 @@ input.switch {
 }
 
 /* move the indicator when checked*/
-#dfg-switch:checked ~ * .slider:before {
+
+#dfg-switch:checked~* .slider:before {
   transform: translateX(100%);
 }
 
 /* toggle visibility of dfg <li> */
-#dfg-switch:not(:checked) ~ * li.dfg-only-display {
+
+#dfg-switch:not(:checked)~* li.dfg-only-display {
   display: none;
 }
 
-#dfg-switch:checked ~ * li.no-dfg-only-display {
+#dfg-switch:checked~* li.no-dfg-only-display {
   display: none;
 }
 
 /* disableled state of the .switch-label elements*/
-#dfg-switch:not(:checked) ~ * .no-dfg-only-highlight.switch-label {
+
+#dfg-switch:not(:checked)~* .no-dfg-only-highlight.switch-label {
   color: var(--gray);
   background-color: white;
   border-color: var(--gray);
 }
 
-#dfg-switch:checked ~ * .dfg-only-highlight.switch-label {
+#dfg-switch:checked~* .dfg-only-highlight.switch-label {
   color: var(--gray);
   background-color: white;
   border-color: var(--gray);
 }
 
 /* translucent background colors */
+
 .translucent-bg-container {
   --bg-color: white;
   position: relative;
-  z-index: 1; /* creates new z-layers*/
+  z-index: 1;
+  /* creates new z-layers*/
   overflow: hidden;
 }
 
@@ -190,12 +211,13 @@ input.switch {
   content: '';
   position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   bottom: 0;
   right: 0;
   background-color: var(--bg-color);
   opacity: 0.5;
-  z-index: -1; /* display below other children */
+  z-index: -1;
+  /* display below other children */
 }
 
 .bg-ncct {
@@ -205,13 +227,15 @@ input.switch {
 .vertical-spacer-vh-10 {
   height: 10vh !important;
 }
+
 .vertical-spacer-vh-25 {
   height: 25vh !important;
 }
+
 .vertical-spacer-vh-50 {
   height: 50vh !important;
 }
+
 .vertical-spacer-vh-75 {
   height: 75vh !important;
 }
-
