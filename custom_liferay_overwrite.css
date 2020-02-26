@@ -27,7 +27,6 @@ and Removes Side margins from Liferay Homepage */
 /* Changes background color and font-size for navbar */
 
 #navigation .navbar-inner {
-  font-size: 1.3em;
   background-color: var(ncct-dark) !important;
 }
 
