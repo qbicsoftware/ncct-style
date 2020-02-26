@@ -32,7 +32,7 @@ and Removes Side margins from Liferay Homepage */
 
 /* Changes background color for active navbar element*/
 
-#navigation .nav>.active>a {
+.aui #navigation .nav>.active>a {
   /* necessary to remove default liferay linear gradient background*/
   background-image: none !important;
   background-color: var(--ncct) !important;
