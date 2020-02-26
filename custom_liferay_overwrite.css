@@ -1,37 +1,58 @@
 /* Makes Navigation bar go over entire page width 
 and Removes Side margins from Liferay Homepage */
+
 #wrapper {
   padding: 0;
   margin: inherit;
 }
 
 /* Moves logo and site number to the right */
-#banner > #heading {
+
+#banner>#heading {
   padding: 0px 5px 0px 5px;
 }
 
 /* logo sizing */
+
 #heading .custom-logo {
   height: 5rem;
 }
 
-#heading .logo.custom-logo > img{
+#heading .logo.custom-logo>img {
   width: inherit;
   height: inherit;
   object-fit: contain;
 }
 
+/* Changes background color and font-size for navbar */
+
+#navigation .navbar-inner {
+  font-size: 1.3em;
+  background-color: var(ncct-dark) !important;
+}
+
+/* Changes background color for active navbar element*/
+
+#navigation .nav>.active>a {
+  /* necessary to remove default liferay linear gradient background*/
+  background-image: none !important;
+  background-color: var(--ncct) !important;
+}
+
 /* Changes Footer position and allows for insertion of image*/
+
 #footer {
   padding: 0px 5px 0px 5px;
 }
 
 /* Removes margin from breadcrumbs to content */
-#content > #breadcrumbs {
+
+#content>#breadcrumbs {
   margin-bottom: inherit;
 }
 
 /* Removes margin and padding from all portlets in a .portlet-borderless-container */
+
 .portlet-borderless-container {
   padding: 0 !important;
   margin-bottom: 0 !important;
