@@ -27,15 +27,15 @@ and Removes Side margins from Liferay Homepage */
 /* Changes background color and font-size for navbar */
 
 .aui #navigation .navbar-inner {
-  background-color: var(ncct-dark) !important;
+  font-size: 1.3em;
+  background-color: var(--ncct-dark);
 }
 
 /* Changes background color for active navbar element*/
 
-.aui #navigation .nav>.active>a {
+.aui #navigation .nav li.active>a {
   /* necessary to remove default liferay linear gradient background*/
-  background-image: none !important;
-  background-color: var(--ncct) !important;
+  background: var(--ncct); 
 }
 
 /* Changes Footer position and allows for insertion of image*/
