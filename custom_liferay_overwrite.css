@@ -1,3 +1,12 @@
+/* use the standard value of 16px for rem computation*/
+:root {
+  font-size: initial;
+}
+.aui body {
+  font-size: initial;
+}
+
+
 /* Makes Navigation bar go over entire page width 
 and Removes Side margins from Liferay Homepage */
 #wrapper {
