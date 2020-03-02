@@ -37,6 +37,7 @@ and Removes Side margins from Liferay Homepage */
 
 .aui #navigation .navbar-inner {
   background-color: var(--ncct-dark);
+  font-size: larger;
 }
 
 /* Changes background color for active navbar element*/
