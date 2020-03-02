@@ -26,28 +26,6 @@ ol > li.bs4-list-group-item {
   margin-top: 5rem;
 }
 
-/* Increase line spacing in table */
-
-.text-height-150 {
-  line-height: 1.5 !important;
-}
-
-/* Slide adapted to full-screen structure and central vertical/horizontal alignment of slide content*/
-
-.slide-panel {
-  /* content of vh-100 */
-  height: 100vh;
-  /* content of d-flex, necessary for vertical and horizontal adjustments */
-  display: -ms-flexbox;
-  display: flex;
-  /* content of justify-content-center */
-  -ms-flex-pack: center;
-  justify-content: center;
-  /* content of align-items-center */
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 /* Custom table class adapted from bs4-table */
 
 .table-collapse {
@@ -310,4 +288,13 @@ img.img-cover {
 
 .section-title .bs4-card {
   background: var(--ncct);
+}
+
+/* set default column count to 4 */
+@media (min-width: 576px) {
+  .bs4-card-columns {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+  }
 }
