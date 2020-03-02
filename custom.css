@@ -224,10 +224,13 @@ input.switch {
   background-color: var(--ncct) !important;
 }
 
+.bg-ncct-dark {
+  background-color: var(--ncct-dark) !important;
+}
+
 .vh-10 {
   height: 10vh !important;
 }
-
 .vh-25 {
   height: 25vh !important;
 }
@@ -249,9 +252,62 @@ input.switch {
 .min-vh-75 {
   min-height: 75vh !important;
 }
+.max-vh-10 {
+  max-height: 10vh !important;
+}
+.max-vh-25 {
+  max-height: 25vh !important;
+}
+.max-vh-50 {
+  max-height: 50vh !important;
+}
+.max-vh-75 {
+  max-height: 75vh !important;
+}
+
+.vw-10 {
+  width: 10vw !important;
+}
+.vw-25 {
+  width: 25vw !important;
+}
+.vw-50 {
+  width: 50vw !important;
+}
+.vw-75 {
+  width: 75vw !important;
+}
+.min-vw-10 {
+  min-width: 10vw !important;
+}
+.min-vw-25 {
+  min-width: 25vw !important;
+}
+.min-vw-50 {
+  min-width: 50vw !important;
+}
+.min-vw-75 {
+  min-width: 75vw !important;
+}
+.max-vw-10 {
+  max-width: 10vw !important;
+}
+.max-vw-25 {
+  max-width: 25vw !important;
+}
+.max-vw-50 {
+  max-width: 50vw !important;
+}
+.max-vw-75 {
+  max-width: 75vw !important;
+}
 
 img.img-cover {
   object-fit: cover;
   height: 100%;
   width: 100%;
+}
+
+.section-title .bs4-card {
+  background: var(--ncct);
 }
