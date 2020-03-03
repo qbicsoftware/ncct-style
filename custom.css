@@ -15,7 +15,7 @@ ol.bs4-list-group {
   margin-bottom: 0;
 }
 
-ol>li.bs4-list-group-item {
+ol > li.bs4-list-group-item {
   display: list-item;
   list-style-position: inside;
 }
@@ -24,28 +24,6 @@ ol>li.bs4-list-group-item {
   text-align: left;
   margin-bottom: 3rem;
   margin-top: 5rem;
-}
-
-/* Increase line spacing in table */
-
-.text-height-150 {
-  line-height: 1.5 !important;
-}
-
-/* Slide adapted to full-screen structure and central vertical/horizontal alignment of slide content*/
-
-.slide-panel {
-  /* content of vh-100 */
-  height: 100vh;
-  /* content of d-flex, necessary for vertical and horizontal adjustments */
-  display: -ms-flexbox;
-  display: flex;
-  /* content of justify-content-center */
-  -ms-flex-pack: center;
-  justify-content: center;
-  /* content of align-items-center */
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 /* Custom table class adapted from bs4-table */
@@ -169,29 +147,29 @@ input.switch {
 
 /* move the indicator when checked*/
 
-#dfg-switch:checked~* .slider:before {
+#dfg-switch:checked ~ * .slider:before {
   transform: translateX(100%);
 }
 
 /* toggle visibility of dfg <li> */
 
-#dfg-switch:not(:checked)~* li.dfg-only-display {
+#dfg-switch:not(:checked) ~ * li.dfg-only-display {
   display: none;
 }
 
-#dfg-switch:checked~* li.no-dfg-only-display {
+#dfg-switch:checked ~ * li.no-dfg-only-display {
   display: none;
 }
 
 /* disableled state of the .switch-label elements*/
 
-#dfg-switch:not(:checked)~* .no-dfg-only-highlight.switch-label {
+#dfg-switch:not(:checked) ~ * .no-dfg-only-highlight.switch-label {
   color: var(--gray);
   background-color: white;
   border-color: var(--gray);
 }
 
-#dfg-switch:checked~* .dfg-only-highlight.switch-label {
+#dfg-switch:checked ~ * .dfg-only-highlight.switch-label {
   color: var(--gray);
   background-color: white;
   border-color: var(--gray);
@@ -208,14 +186,14 @@ input.switch {
 }
 
 .translucent-bg-container::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   background-color: var(--bg-color);
-  opacity: 0.5;
+  opacity: 0.8;
   z-index: -1;
   /* display below other children */
 }
@@ -224,16 +202,99 @@ input.switch {
   background-color: var(--ncct) !important;
 }
 
-.vertical-spacer-vh-10 {
-  height: 10vh !important;
+.bg-ncct-dark {
+  background-color: var(--ncct-dark) !important;
 }
 
-.vertical-spacer-vh-25 {
+.vh-10 {
+  height: 10vh !important;
+}
+.vh-25 {
   height: 25vh !important;
 }
-.vertical-spacer-vh-50 {
+.vh-50 {
   height: 50vh !important;
 }
-.vertical-spacer-vh-75 {
+.vh-75 {
   height: 75vh !important;
+}
+.min-vh-10 {
+  min-height: 10vh !important;
+}
+.min-vh-25 {
+  min-height: 25vh !important;
+}
+.min-vh-50 {
+  min-height: 50vh !important;
+}
+.min-vh-75 {
+  min-height: 75vh !important;
+}
+.max-vh-10 {
+  max-height: 10vh !important;
+}
+.max-vh-25 {
+  max-height: 25vh !important;
+}
+.max-vh-50 {
+  max-height: 50vh !important;
+}
+.max-vh-75 {
+  max-height: 75vh !important;
+}
+
+.vw-10 {
+  width: 10vw !important;
+}
+.vw-25 {
+  width: 25vw !important;
+}
+.vw-50 {
+  width: 50vw !important;
+}
+.vw-75 {
+  width: 75vw !important;
+}
+.min-vw-10 {
+  min-width: 10vw !important;
+}
+.min-vw-25 {
+  min-width: 25vw !important;
+}
+.min-vw-50 {
+  min-width: 50vw !important;
+}
+.min-vw-75 {
+  min-width: 75vw !important;
+}
+.max-vw-10 {
+  max-width: 10vw !important;
+}
+.max-vw-25 {
+  max-width: 25vw !important;
+}
+.max-vw-50 {
+  max-width: 50vw !important;
+}
+.max-vw-75 {
+  max-width: 75vw !important;
+}
+
+img.img-cover {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.section-title .bs4-card {
+  background: var(--ncct);
+}
+
+/* set default column count to 4 */
+@media (min-width: 576px) {
+  .bs4-card-columns {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+  }
 }
