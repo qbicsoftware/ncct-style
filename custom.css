@@ -62,12 +62,6 @@ ol > li.bs4-list-group-item {
   color: black;
 }
 
-/* display the content in exactly 2 columns */
-
-.two-columns {
-  column-count: 2 !important;
-}
-
 /* styling based on project-type */
 
 li.dfg-only {
@@ -296,5 +290,18 @@ img.img-cover {
     -webkit-column-count: 4;
     -moz-column-count: 4;
     column-count: 4;
+  }
+}
+
+/* display the content in exactly 2 columns for the two-columns class*/
+@media (min-width: 576px) 
+{
+  .two-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+     column-count: 2;
+     margin-bottom: 0.75rem;
+     display: inline-block;
+     width: 100%;
   }
 }
