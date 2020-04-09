@@ -333,7 +333,7 @@ a[target="_blank"]:after {
   bottom: 10px;
 }
 
-a.btn:after {
+a[target="_blank"].btn:after {
   content: "";
   background-image: url("https://portal.qbic.uni-tuebingen.de/portal/documents/33387/39176/external-linktransparentwhite.png/33f8123c-35e1-4510-8871-b423d880d01c?t=1586359941122");
   background-size: 100% 100%;
