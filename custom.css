@@ -327,9 +327,10 @@ a[target="_blank"]:after {
   background-image: url("https://portal.qbic.uni-tuebingen.de/portal/documents/33387/39176/external-linktransparentblue.png/921a7415-7323-4f83-b77a-bb5a289c4009?t=1586359941379");
   background-size: 100% 100%;
   display: inline-block;
-  height: 15px;
-  width: 15px;
+  height: 10px;
+  width: 10px;
   position: relative;
+  bottom: 10px;
 }
 
 a.btn:after {
@@ -337,7 +338,8 @@ a.btn:after {
   background-image: url("https://portal.qbic.uni-tuebingen.de/portal/documents/33387/39176/external-linktransparentwhite.png/33f8123c-35e1-4510-8871-b423d880d01c?t=1586359941122");
   background-size: 100% 100%;
   display: inline-block;
-  height: 15px;
-  width: 15px;
+  height: 10px;
+  width: 10px;
   position: relative;
+  bottom: 10px;
 }
