@@ -147,6 +147,7 @@
 }
 
 /* .bs4-stretched-link makes card to be the link*/
+
 .bs4-stretched-link::after {
   position: absolute;
   top: 0;
@@ -159,7 +160,7 @@
   background-color: rgba(0, 0, 0, 0);
 }
 
- /* .card related classes */
+/* .card related classes */
 
 .bs4-card {
   position: relative;
@@ -2650,4 +2651,9 @@
   margin-bottom: 1rem;
   border: 1px solid transparent;
   border-radius: 0.25rem;
+}
+
+.bs4-flex-column {
+  -ms-flex-direction: column !important;
+  flex-direction: column !important;
 }

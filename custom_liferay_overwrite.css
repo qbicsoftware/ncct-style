@@ -1,12 +1,13 @@
 /* use the standard value of 16px for rem computation*/
+
 :root {
   font-size: initial;
 }
+
 .aui body {
   font-size: initial;
   line-height: 1.7;
 }
-
 
 /* Makes Navigation bar go over entire page width 
 and Removes Side margins from Liferay Homepage */
@@ -58,7 +59,6 @@ and Removes Side margins from Liferay Homepage */
   background-repeat: no-repeat;
   background-image: url("https://portal-testing.qbic.uni-tuebingen.de/documents/50393/52039/ncct-logo-all.png/3760437f-216f-4bfa-b2c5-e5d7ed911a66?t=1583160765889");
 }
-
 
 /* Removes margin from breadcrumbs to content */
 
