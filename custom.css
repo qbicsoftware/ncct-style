@@ -26,6 +26,10 @@ ol>li.bs4-list-group-item {
   margin-top: 5rem;
 }
 
+.section-title .bs4-card {
+  background: var(--ncct);
+}
+
 /* Custom table class adapted from bs4-table */
 
 .table-collapse {
@@ -286,6 +290,7 @@ input.switch {
   min-width: 75vw !important;
 }
 
+
 .min-vw-auto {
   min-width: auto !important;
 }
@@ -335,6 +340,11 @@ img.img-in-text {
   margin: auto;
   background-image: none !important;
 }
+
+img.img-in-text {
+  height: 2.5ex;
+}
+
 
 a[target="_blank"]:after {
   content: "";
