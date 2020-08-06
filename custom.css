@@ -286,6 +286,10 @@ input.switch {
   min-width: 75vw !important;
 }
 
+.min-vw-auto {
+  min-width: auto !important;
+}
+
 .max-vw-10 {
   max-width: 10vw !important;
 }
@@ -308,6 +312,10 @@ img.img-cover {
   width: 100%;
 }
 
+img.img-in-text {
+  height: 2.5ex;
+}
+
 .section-title .bs4-card {
   background: var(--ncct);
 }
@@ -320,6 +328,12 @@ img.img-cover {
     -moz-column-count: 4;
     column-count: 4;
   }
+}
+
+.btn-ncct {
+  max-width: 200px;
+  margin: auto;
+  background-image: none !important;
 }
 
 a[target="_blank"]:after {

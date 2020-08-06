@@ -2643,3 +2643,8 @@
 .bs4-border-0 {
   border: 0 !important;
 }
+
+.bs4-flex-column {
+  -ms-flex-direction: column !important;
+  flex-direction: column !important;
+}
