@@ -1,0 +1,369 @@
+/*Previously Implemented Color Scheme for NCCT Homepage */
+
+:root {
+  --ncct: #027ba4;
+  --ncct-dark: #333333;
+}
+
+ul.bs4-list-group {
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+ol.bs4-list-group {
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+ol>li.bs4-list-group-item {
+  display: list-item;
+  list-style-position: inside;
+}
+
+.section-title {
+  text-align: left;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+}
+
+.section-title .bs4-card {
+  background: var(--ncct);
+}
+
+/* Custom table class adapted from bs4-table */
+
+.table-collapse {
+  border-collapse: collapse;
+}
+
+/* Align definition text to the left and increase font-size + font-weight */
+
+.impressum-table th {
+  text-align: left;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* Align description text to the left and increase font-size + font-weight */
+
+.impressum-table td {
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+/* Change font-color and background color for odd rownumbers */
+
+.impressum-table-striped tbody tr:nth-of-type(odd) {
+  background-color: var(--ncct);
+  color: white;
+}
+
+/* Change font-color and background color for even rownumbers */
+
+.impressum-table-striped tbody tr:nth-of-type(even) {
+  background-color: white;
+  color: black;
+}
+
+/* display the content in exactly 2 columns */
+
+.two-columns {
+  column-count: 2 !important;
+}
+
+/* styling based on project-type */
+
+li.dfg-only {
+  color: inherit;
+}
+
+li.no-dfg-only {
+  color: inherit;
+}
+
+/* toggle switch slider CSS */
+
+/* box around the slider */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch-container {
+  margin: 0 1rem;
+}
+
+/* acivated state */
+
+.switch-label {
+  background-color: var(--ncct);
+  border: 0.2rem transparent;
+  color: white;
+  font-size: 2rem;
+  line-height: 1.2;
+  padding: 0.3rem;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* hide the default checkbox */
+
+input.switch {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--ncct);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/* sliding indicator */
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 80%;
+  width: 50%;
+  top: 10%;
+  left: 0;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider.bs4-rounded-lg:before {
+  border-radius: inherit;
+}
+
+/* move the indicator when checked*/
+
+#dfg-switch:checked~* .slider:before {
+  transform: translateX(100%);
+}
+
+/* toggle visibility of dfg <li> */
+
+#dfg-switch:not(:checked)~* li.dfg-only-display {
+  display: none;
+}
+
+#dfg-switch:checked~* li.no-dfg-only-display {
+  display: none;
+}
+
+/* disableled state of the .switch-label elements*/
+
+#dfg-switch:not(:checked)~* .no-dfg-only-highlight.switch-label {
+  color: var(--gray);
+  background-color: white;
+  border-color: var(--gray);
+}
+
+#dfg-switch:checked~* .dfg-only-highlight.switch-label {
+  color: var(--gray);
+  background-color: white;
+  border-color: var(--gray);
+}
+
+/* translucent background colors */
+
+.translucent-bg-container {
+  --bg-color: white;
+  position: relative;
+  z-index: 1;
+  /* creates new z-layers*/
+  overflow: hidden;
+}
+
+.translucent-bg-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--bg-color);
+  opacity: 0.8;
+  z-index: -1;
+  /* display below other children */
+}
+
+.bg-ncct {
+  background-color: var(--ncct) !important;
+}
+
+.bg-ncct-dark {
+  background-color: var(--ncct-dark) !important;
+}
+
+.vh-10 {
+  height: 10vh !important;
+}
+
+.vh-25 {
+  height: 25vh !important;
+}
+
+.vh-50 {
+  height: 50vh !important;
+}
+
+.vh-75 {
+  height: 75vh !important;
+}
+
+.min-vh-10 {
+  min-height: 10vh !important;
+}
+
+.min-vh-25 {
+  min-height: 25vh !important;
+}
+
+.min-vh-50 {
+  min-height: 50vh !important;
+}
+
+.min-vh-75 {
+  min-height: 75vh !important;
+}
+
+.max-vh-10 {
+  max-height: 10vh !important;
+}
+
+.max-vh-25 {
+  max-height: 25vh !important;
+}
+
+.max-vh-50 {
+  max-height: 50vh !important;
+}
+
+.max-vh-75 {
+  max-height: 75vh !important;
+}
+
+.vw-10 {
+  width: 10vw !important;
+}
+
+.vw-25 {
+  width: 25vw !important;
+}
+
+.vw-50 {
+  width: 50vw !important;
+}
+
+.vw-75 {
+  width: 75vw !important;
+}
+
+.min-vw-10 {
+  min-width: 10vw !important;
+}
+
+.min-vw-25 {
+  min-width: 25vw !important;
+}
+
+.min-vw-50 {
+  min-width: 50vw !important;
+}
+
+.min-vw-75 {
+  min-width: 75vw !important;
+}
+
+
+.min-vw-auto {
+  min-width: auto !important;
+}
+
+.max-vw-10 {
+  max-width: 10vw !important;
+}
+
+.max-vw-25 {
+  max-width: 25vw !important;
+}
+
+.max-vw-50 {
+  max-width: 50vw !important;
+}
+
+.max-vw-75 {
+  max-width: 75vw !important;
+}
+
+img.img-cover {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+img.img-in-text {
+  height: 2.5ex;
+}
+
+.section-title .bs4-card {
+  background: var(--ncct);
+}
+
+/* set default column count to 4 */
+
+@media (min-width: 576px) {
+  .bs4-card-columns {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+  }
+}
+
+.btn-ncct {
+  max-width: 200px;
+  margin: auto;
+  background-image: none !important;
+}
+
+img.img-in-text {
+  height: 2.5ex;
+}
+
+
+a[target="_blank"]:after {
+  content: "";
+  background-image: url("https://portal.qbic.uni-tuebingen.de/portal/documents/33387/39176/external-linktransparentblue.png/921a7415-7323-4f83-b77a-bb5a289c4009?t=1586359941379");
+  background-size: 100% 100%;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  position: relative;
+  bottom: 10px;
+}
+
+a[target="_blank"].btn:after {
+  content: "";
+  background-image: url("https://portal.qbic.uni-tuebingen.de/portal/documents/33387/39176/external-linktransparentwhite.png/33f8123c-35e1-4510-8871-b423d880d01c?t=1586359941122");
+  background-size: 100% 100%;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  position: relative;
+  bottom: 10px;
+}
