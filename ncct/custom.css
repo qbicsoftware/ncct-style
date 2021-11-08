@@ -367,3 +367,14 @@ a[target="_blank"].btn:after {
   position: relative;
   bottom: 10px;
 }
+
+.ncct-information-icon {
+    background-size: 100% 100%;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    position:absolute;
+    right:0px;
+}
+
+
