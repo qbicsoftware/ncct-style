@@ -367,3 +367,37 @@ a[target="_blank"].btn:after {
   position: relative;
   bottom: 10px;
 }
+
+.ncct-information-icon {
+    background-size: 100% 100%;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    position:absolute;
+    right:0px;
+}
+
+.ncct-tooltip-text {
+  visibility: hidden;
+  opacity: .9;
+  background-color: #027ba4;
+  color: #fff;
+  padding: 1em;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 10%;
+  line-height: 15px;
+  font-size: 0.875em;
+  width: max-content;
+  max-width: 300px;
+}
+
+@media (min-width: 1750px) {
+  .ncct-tooltip-text {
+    left: 105%;
+  }
+}
+
+

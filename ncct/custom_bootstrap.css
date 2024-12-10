@@ -283,6 +283,8 @@
 
 .bs4-card-deck .bs4-card {
   margin-bottom: 15px;
+  min-width: 300px;
+  max-width:  470px;
 }
 
 @media (min-width: 576px) {
